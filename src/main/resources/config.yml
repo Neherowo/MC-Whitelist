@@ -1,0 +1,51 @@
+#Plugin created by Nehorowo for nehorowo.me
+
+configuration:
+  whitelist:
+    list:
+      #Lista graczy na whitelist.
+      - "gracz1"
+      - "gracz2"
+      - "gracz3"
+    #Status whitelist. (true - wlaczony, false - wylaczony)
+    status: true
+    bypass-permission: "whitelist.bypass"
+  antibot:
+    #Czy wlaczyc antibot? (true - wlaczony, false - wylaczony)
+    #Nie jest to jakis zaawansowany system blokowania botow. Wkrotce ten system zostanie rozwiniety.
+    status: true
+
+messages:
+  correct-usage: "&fPoprawne uzycie: &a[USAGE]"
+  whitelist:
+    whitelist-reloaded: "&fPrzeładowano whitelist w &a[TIME]"
+    already-whitelisted: "&fGracz &a[TARGET] &fznajduje się już na whitelist!"
+    already-not-whitelisted: "&fGracz &a[TARGET] &fnie znajduje się na whitelist!"
+    added-player: "&fDodano gracza &a[TARGET] &fdo whitelisty!"
+    removed-player: "&fUsunięto gracza &a[TARGET] &fz whitelisty!"
+    list:
+      message: "&fLista graczy na whitelist:"
+      format: "&f- &a[LIST]"
+    changed-whitelist-status: "&fZmieniono status whitelisty na &a[STATUS]!"
+    whitelist-status: "&fWhitelist jest [STATUS]!"
+    already-enabled: "&aWhitelist jest już włączona!"
+    already-disabled: "&cWhitelist jest już wyłączona!"
+    whitelist-reload: "&fPrzeladowano whitelist w &a[TIME]"
+    check-message: "&fGracz &a[PLAYER] &f[STATUS]"
+
+  whitelist-bypass:
+    join-message: "&fPosiadasz permisje [PERMISSION], wiec nie musisz wchodzić na serwer z whitelist'a."
+
+  not-whitelisted:
+    broadcast: "&fGracz o nazwie &a[TARGET] &fpróbował wejść na serwer, ale nie ma go na &2Whitelist &7(&2[TIME]&7)"
+    kick:
+      reason: |-
+        &c&nNie znajdujesz sie na bialej liscie.&r
+            &cJezeli wierzysz, ze to
+         &cblad, zglos sie do administracji.
+  join:
+    title: "&fWitaj &a[PLAYER]"
+    subtitle: "&fPolaczano z serwerem &2Nagrywki #1"
+
+  antibot:
+    message: "&8[&4ANTI-BOT&8] &cWykryto bota. Zostales wyrzucony z serwera."

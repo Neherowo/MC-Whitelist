@@ -1,0 +1,14 @@
+#
+#
+#  Project: MC-Whitelist
+#    @Since 29.05.2023
+#
+#
+name: MC-WhiteList
+version: 1.0-SNAPSHOT
+main: pl.nehorowo.whitelist.WhitelistPlugin
+api-version: 1.16
+author: nehorowo
+commands:
+  whitelist:
+    aliases: [wl]
